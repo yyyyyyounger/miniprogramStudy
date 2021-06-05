@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/course/course",
+    "pages/profile/profile",
+    "pages/others/others"
+  ],
+  "window":{
+    "enablePullDownRefresh":true,
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fdd835",
+    "navigationBarTitleText": "Demo Test",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#212121",
+    "selectedColor": "#76ff03",
+    "backgroundColor": "#00000",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "Home",
+      "iconPath": "icon/home.png",
+      "selectedIconPath": "icon/home-hover.png"
+    },
+    {
+      "pagePath": "pages/course/course",
+      "text": "Course",
+      "iconPath": "icon/main.png",
+      "selectedIconPath": "icon/main-hover.png"
+    }
+  ]},
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
