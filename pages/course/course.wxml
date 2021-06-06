@@ -1,2 +1,103 @@
-<!--pages/course/course.wxml-->
-<text>pages/course/course.wxml</text>
+<!-- 
+  text標籤等於print出東西，默認不換行
+  view標籤也是print出東西，默認換行 
+-->
+<!-- <text>I am a text tab. </text>
+<text>I am also a text tab.</text>
+
+<view>I am a view tab.</view>
+<view>I am also a view tab.</view> -->
+
+<view>{{msg}}</view>  
+<!-- 變量需要用{{}}框住以引用 -->
+<view>{{num}}</view>
+<view>是否是偽娘：{{isGirl}}</view>
+<!-- 渲染object需要用.引出對象 -->
+<view>{{person.age}}</view>
+<view>{{person.height}}</view>
+<view>{{person.weight}}</view>
+<view>{{person.name}}</view>
+
+<!-- 標籤中屬性的使用 -->
+<view data-numx="{{num}}"> 自定義屬性</view>
+<!-- 以上應該設置了一個名為numx的num變量類型(數字類型)的屬性 -->
+
+<!-- 以bool類型當做屬性，checkbox是複選框，有checked屬性 -->
+<checkbox checked="{{isGirl}}"></checkbox>
+
+
+<!-- 
+  運算，可以在 雙花括號{{}} 中加入一些表達式
+  數字加減；字符串拼接；三元表達式
+-->
+<view>{{1+1}}</view>
+
+<view>{{'1'+'1'}}</view>
+
+<!-- 
+  三元運算
+  表達式 ? [True的結果] : [False的結果] 
+-->
+<view> {{11 % 2===0 ? '偶數' : '奇數'}} </view>
+
+
+<!-- 
+  列表循環 
+    1 wx:for="{{數組或者對象}}"   wx:for-item="循環項的名稱"    wx:for-index="循環項的索引"
+    2 wx:key="唯一的值" 用來提高列表渲染的性能
+        如果綁定string，那該字符串名稱必須為循環數組中 對象的唯一屬性
+        wx:key="*this"  表示數組是一個普通數組 *this表示是循環項
+-->
+<view>數組循環
+  <view 
+  wx:for="{{list}}"
+  wx:for-item="item"
+  wx:for-index="index"
+  wx:key="id"
+  >
+  <!-- 約等於循環內新增item變量，該變量可指向原數組的任意對象 -->
+  <!-- 該綁定的名稱不要重複命名 -->
+  <!-- 只有一層循環時，wx:for-item和-index的代碼可以省略 -->
+  索引號: {{index}}
+  --
+  值 :{{item.name}}
+  </view>
+</view>
+<!--
+  對象循環
+  wx:for="{{對象}}"   
+  wx:for-item="對象的值"    
+  wx:for-index="對象的屬性"
+  循環對象時最好把index和item都重新命名
+-->
+<view>
+  <view>對象循環</view>
+  <view
+  wx:for="{{person}}"
+  wx:for-item="value"
+  wx:for-index="key"
+  wx:key="age"
+  >
+    屬性：{{key}}
+    屬性值：{{value}}
+  </view>
+</view>
+
+<!-- 
+  block標籤 
+  相當於一個佔位符
+-->
+<block 
+  wx:for="{{list}}"
+  wx:for-item="item"
+  wx:for-index="index"
+  wx:key="id"
+  >
+  <!-- 約等於循環內新增item變量，該變量可指向原數組的任意對象 -->
+  <!-- 該綁定的名稱不要重複命名 -->
+  <!-- 只有一層循環時，wx:for-item和-index的代碼可以省略 -->
+  索引號: {{index}}
+  --
+  值 :{{item.name}}
+  </block>  <!-- 不想出現標籤時可以用這個佔位 -->
+
