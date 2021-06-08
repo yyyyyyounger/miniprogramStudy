@@ -101,3 +101,30 @@
   值 :{{item.name}}
   </block>  <!-- 不想出現標籤時可以用這個佔位 -->
 
+
+<!-- 
+  條件渲染
+    wx:if= " {{true/false}} "   在view標籤中控制是否顯示
+      wx:elif=""  前一個條件不滿足則執行
+      ex:else=""  前面條件都不滿足則執行
+    hidden直接加入標籤則可以隱藏
+    hidden="{{}}"   可以加入表達式
+
+    當標籤不是頻繁切換顯示，則優先使用 wx:if
+      if 會直接從頁面結構移除
+    當標籤頻繁切換顯示，優先用 hidden
+      hidden 通過添加樣式的方式切換顯示
+      不要和 style樣式同時使用
+-->
+<view>
+  <view>條件渲染展示</view>
+  <view wx:if="{{true}}">顯示</view>
+  <view wx:if="{{false}}">隱藏</view>
+
+  <view wx:if="{{false}}">1</view>
+  <view wx:elif="{{false}}">2</view>
+  <view wx:else>3</view>
+
+  <view>------------------</view>
+  <view hidden >hidden test</view>
+</view>

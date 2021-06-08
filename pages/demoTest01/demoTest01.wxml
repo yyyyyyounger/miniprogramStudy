@@ -1,0 +1,24 @@
+<!--input標籤必須加 / 表示結束-->
+<!--
+  給input標籤綁定一個 input事件
+    綁定關鍵字 bindinput
+    通過js中新增的時間的e獲取需要信息，例如e.detail.value
+
+  把輸入框的值賦值到 js 的data中，對對象操作的寫法
+    this.setData({
+      num:e.detail.value
+    })
+  
+  加入點擊事件
+    綁定關鍵字 bindtap
+    不可以在事件中直接傳參，需通過自定義屬性的方式來傳遞參數
+-->
+<input type="text" bindinput="handleInput" />
+<button bindtap="handleTap" data-operation="{{1}}" >+</button>  
+<!-- operation是自定義出來的屬性名 -->
+<button bindtap="handleTap" data-operation="{{-1}}" >-</button>
+<view>-----------------</view>
+<view>
+  {{num}}
+</view>
+
