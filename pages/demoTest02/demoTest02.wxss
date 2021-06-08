@@ -1,1 +1,27 @@
-/* pages/demoTest02/demoTest02.wxss */
+/* 
+  小程序中不需要主動引入樣式文件 
+  將 px 改成 rpx
+    e.g. 當設計稿是 750x 
+          750px = 750rpx; 1px = 1rpx;
+        屏幕寬度改成 375px
+          375px = 750rpx
+          1px = 2rpx
+          1rpx = 0.5px
+  
+  存在一個設計稿 寬度414 或者 未知，page
+    設計稿page存在一個元素 寬度 100px
+    page px = 750 rpx
+    1 px = 750 / page rpx
+    100 px = 750*100/page rpx
+
+  利用 calc()屬性 計算
+
+*/
+
+
+view {
+  width: 200px;
+  height: 200px;
+  font-size: 40px;
+  background-color: aqua;
+}
