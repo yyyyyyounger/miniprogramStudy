@@ -1,0 +1,6 @@
+/* 
+通過 @import 引入代碼
+路徑只能寫相對路徑
+ */
+
+@import "../../styles/common.wxss";
