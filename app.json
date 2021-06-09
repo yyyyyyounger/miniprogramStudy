@@ -3,8 +3,8 @@
     "pages/demoTest03/demoTest03",
     "pages/demoTest02/demoTest02",
     "pages/demoTest01/demoTest01",
-    "pages/course/course",
     "pages/index/index",
+    "pages/course/course",
     "pages/logs/logs",
     "pages/profile/profile",
     "pages/others/others"
