@@ -1,0 +1,4 @@
+/* 
+  通過 @import 來引入樣式文件
+ */
+@import "../../styles/common.wxss";

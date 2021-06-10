@@ -1,0 +1,10 @@
+text {
+  /* 使用變量 */
+  color: yellow;
+}
+view .vie1 text {
+  color: red;
+}
+view {
+  color: green;
+}
