@@ -1,0 +1,7 @@
+<text>這是一段不可複製的文字</text>
+
+<text selectable decode>
+  這是一段可以複製的文字
+  &nbsp;              <!-- 換行編碼，需要配置decode屬性 -->
+  123test
+</text>
