@@ -1,2 +1,4 @@
 <!--pages/demoTest04/demoTest04.wxml-->
-<text>pages/demoTest04/demoTest04.wxml</text>
+<text>textTest</text>
+
+<view>viewTest</view>
