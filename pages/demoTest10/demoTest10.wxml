@@ -1,0 +1,5 @@
+<!-- 
+    icon 小程序中的字體圖標
+ -->
+<icon type="success" size="60" color=""> </icon>
+<icon type="cancel" size="23" color=""></icon>

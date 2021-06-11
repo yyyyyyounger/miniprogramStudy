@@ -1,0 +1,17 @@
+<!-- 
+    radio 單選框
+    必須和 radio-group配合使用
+    設定value為選中的單選框的值
+    給 radio-group 綁定 change事件
+ -->
+
+<radio-group bindchange="handleChange">
+    <radio value="male">男</radio>
+    <radio value="female">女</radio>
+</radio-group>
+
+<view>
+    您選中的是:
+    {{gender=='male' ? '男' :'女'}}
+</view>
+

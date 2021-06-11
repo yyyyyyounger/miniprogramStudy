@@ -1,0 +1,17 @@
+<button> 默認Button </button>
+<button size="mini"> mini Button </button>
+
+<button type="warn"> 警告 </button>
+<button type="warn" plain> plain警告 </button>
+<button type="primary"> 允許 </button>
+
+<!-- Button的開放能力 -->
+<button open-type="contact"> contact </button>
+<button open-type="share"> share </button>
+<button open-type="getPhoneNumber"> getPhoneNumber </button>
+<!-- getUserInfo用於得到用戶信息 -->
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo"> getUserInfo </button>
+<button open-type="launchApp"> launchApp </button>
+<button open-type="openSetting"> openSetting </button>
+<button open-type="feedback"> feedback </button>
+

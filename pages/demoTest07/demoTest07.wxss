@@ -6,5 +6,4 @@ swiper {
 
 image {
     width: 100%;
-    mode: widthFix;
 }
