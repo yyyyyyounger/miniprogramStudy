@@ -1,0 +1,10 @@
+swiper {
+    width: 100%;
+    height: calc(100vw * 260 / 640);    
+    /* clac()才可以放置運算表達式 */
+}
+
+image {
+    width: 100%;
+    mode: widthFix;
+}

@@ -1,0 +1,15 @@
+<!-- 
+image 圖片標籤
+scr 可以指定要加載的圖片的路徑
+圖片存在默認的寬度高度 320*240      原圖大小 200*100
+
+mode 屬性決定 圖片內容 如何與 圖片標籤-寬高 做適配
+
+支持懶加載 lazy-load
+-->
+
+<image 
+    lazy-load="{{true}}"
+    mode="aspectFit"
+    src="https://i.loli.net/2021/06/11/nBEDM9utzKPafIk.jpg" />
+

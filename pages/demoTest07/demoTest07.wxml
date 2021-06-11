@@ -1,0 +1,21 @@
+<!-- 
+    1 輪播圖外層容器稱之為 swiper
+    2 每一個輪播項稱之為 swiper-item 
+    3 swiper標籤存在默認樣式
+        1 width 100%
+        2 height 150px
+        3 swiper 的高度無法由內容撐開
+    4 先找出原圖寬高，等比例給 swiper 定義寬高
+        原圖 640 * 260 px
+        swiper寬度 / swiper高度 = 原圖寬度 / 原圖高度
+        swiper高度 = swiper寬度 * 原圖高度 / 原圖寬度
+        height: 100vw * 260 / 640
+            // vm是% 
+ -->
+ 
+ <swiper autoplay interval="1500">
+     <swiper-item> <image mode="widthFix" lazy-load src="//gw.alicdn.com/imgextra/i2/O1CN010xjROZ1qQT5F1XoCp_!!6000000005490-0-tps-640-260.jpg_Q75.jpg"/> </swiper-item>
+     <swiper-item> <image mode="widthFix" lazy-load src="//gw.alicdn.com/imgextra/i1/O1CN01M8ROMY1LN21UQ8JCV_!!6000000001286-0-tps-640-260.jpg_Q75.jpg"/> </swiper-item>
+     <swiper-item> <image mode="widthFix" lazy-load src="//gw.alicdn.com/imgextra/i4/3937219703/O1CN01p4jw072LY1i7bJlAi_!!3937219703-0-C2M.jpg_240x10000Q75.jpg"/> </swiper-item>
+ 
+ </swiper>
