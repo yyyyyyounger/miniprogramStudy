@@ -1,0 +1,26 @@
+// 定義 less 變量
+
+@color: blue;
+
+text{
+    /* 使用變量 */
+    color: @color;
+}
+
+
+// 嵌套？？ 沒搞懂！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
+view {
+    .vie1 {
+        text {
+            color: red;
+        }
+    }
+}
+
+
+// 導入 reset
+@import "../../styles/reset.less";
+view {
+    color: @themeColor;
+}
+

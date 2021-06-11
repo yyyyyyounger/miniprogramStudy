@@ -7,7 +7,7 @@ Page({
   handleInput (e) {   // e表示event源對象
     //console.log("😁");      // 用於在Console輸出相關信息
     console.log(e.detail.value);
-    this.setData({
+    this.setData({            //this 使用setData功能
       num:e.detail.value
     })
   },
