@@ -11,7 +11,22 @@
 </radio-group>
 
 <view>
-    您選中的是:
-    {{gender=='male' ? '男' :'女'}}
+    您選中的是: {{gender}}
 </view>
 
+
+<view>
+    checkBox Test
+</view>
+  
+<view>
+    <checkbox-group bindchange="handleItemChange">
+        <checkbox wx:for="{{list}}" value="{{item.value}}" wx:key="id">
+            {{item.name}}
+        </checkbox>
+    </checkbox-group>
+    <view>
+        選中的水果：{{checkedList}}
+    </view>
+      
+</view>
