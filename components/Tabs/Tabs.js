@@ -1,31 +1,14 @@
-// components/Tabs/Tabs.js
 Component({
   properties: {
     
   },
 
   data: {
-    tabs:[
-      {
-        id:0,
-        name:"首頁",
-        isActive:true
-      },
-      {
-        id:1,
-        name:"原創",
-        isActive:false
-      },
-      {
-        id:2,
-        name:"分類",
-        isActive:false
-      },
-      {
-        id:3,
-        name:"關於",
-        isActive:false
-      },
+    tabs: [
+      { id:0, name:"首頁", isActive:true },
+      { id:1, name:"原創", isActive:false },
+      { id:2, name:"分類", isActive:false },
+      { id:3, name:"關於", isActive:false },
     ]
   },
 
