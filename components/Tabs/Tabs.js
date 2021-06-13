@@ -18,13 +18,14 @@ Component({
    */
   methods: {
     handleItemTap(e){
-    /*  綁定點擊事件
-      獲取被點擊的索引
-      獲取原數組
-      對數組循環
-        給每一個循環項的 isActive選中屬性 改為flase
-        給當前索引的項，添加激活選中效果*/
-      console.log(e);
+    /*  
+      1 綁定點擊事件
+      2 獲取被點擊的索引
+      3 獲取原數組
+      4 對數組循環
+        1 給每一個循環項的 isActive選中屬性 改為flase
+        2 給當前索引的項，添加激活選中效果
+    */
       console.log(e.currentTarget.dataset);
       const {index} = e.currentTarget.dataset;
       let {tabs}=this.data; //{tabs}是解構，對複雜類型進行解構的時候，複製了一份變量的引用
@@ -33,7 +34,9 @@ Component({
       tabs.forEach((v,i)=>i===index?v.isActive=true:v.isActive=false);
       this.setData({
         tabs
-      });
+      })
     }
   }
+
+
 })
