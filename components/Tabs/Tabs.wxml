@@ -1,2 +1,17 @@
-<!--components/Tabs/Tabs.wxml-->
-<text>components/Tabs/Tabs.wxml</text>
+<!-- 在標籤頭中用 class 可以匹配對應的樣式文件 -->
+<view class="tabs">
+  <view class="tabs_title">
+    <!-- <view class="title_item active">首頁</view>
+    <view class="title_item">原創</view>
+    <view class="title_item">分類</view>
+    <view class="title_item">關於</view> -->
+    <view 
+      wx:for="{{tabs}}"
+      wx:key="id"
+      class="title_item {{item.isActive ? 'active':''}}"
+      bindtap="handleItemTap">
+      {{item.name}}
+    </view>
+  </view>
+  <view class="tabs_content">內容</view>
+</view>
