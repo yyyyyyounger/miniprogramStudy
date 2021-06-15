@@ -14,9 +14,9 @@
     不可以在事件中直接傳參，需通過自定義屬性的方式來傳遞參數
 -->
 <input type="text" bindinput="handleInput" />
-<button bindtap="handleTap" data-operation="{{1}}" >+</button>  
+<button bindtap="handleTap" data-operation="{{1}}" > + </button>  
 <!-- operation是自定義出來的屬性名 -->
-<button bindtap="handleTap" data-operation="{{-1}}" >-</button>
+<button bindtap="handleTap" data-operation="{{-1}}" > - </button>
 <view>-----------------</view>
 <view>
   {{num}}
