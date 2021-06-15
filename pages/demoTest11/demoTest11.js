@@ -22,6 +22,7 @@ Page({
     checkedList:[]
   },
 
+  // "e"可以隨便取
   handleChange(e){
     console.log(e);
     // 獲取選擇的單選框的值

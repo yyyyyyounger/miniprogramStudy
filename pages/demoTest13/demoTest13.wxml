@@ -1,18 +1,2 @@
-<view>
-  <button
-  wx:for="{{list}}"
-  wx:for-item="item"
-  wx:for-index="index"
-  wx:key="id"
-  bindtap="handleTap1"
-  >
-  {{item.name}}
-  </button>
-</view>
-
-<view 
-wx:for="{{array}}"
-bindtap="handleTap2"
-> 
-{{item}} 
-</view>
+<!--pages/demoTest13/demoTest13.wxml-->
+<text>pages/demoTest13/demoTest13.wxml</text>
