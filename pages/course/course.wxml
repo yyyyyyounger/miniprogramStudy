@@ -91,7 +91,7 @@
   wx:for="{{list}}"
   wx:for-item="item"
   wx:for-index="index"
-  wx:key="id"
+  wx:="id"
   >
   <!-- 約等於循環內新增item變量，該變量可指向原數組的任意對象 -->
   <!-- 該綁定的名稱不要重複命名 -->

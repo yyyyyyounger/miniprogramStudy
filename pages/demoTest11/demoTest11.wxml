@@ -21,7 +21,7 @@
   
 <view>
     <checkbox-group bindchange="handleItemChange">
-        <checkbox wx:for="{{list}}" value="{{item.value}}" wx:key="id">
+        <checkbox wx:for="{{list}}" value="{{item.value}}" wx:="id">
             {{item.name}}
         </checkbox>
     </checkbox-group>
